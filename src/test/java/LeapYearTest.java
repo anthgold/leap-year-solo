@@ -15,6 +15,10 @@ public class LeapYearTest {
     assertEquals(false, leapYear.isLeapYear(1900));
   }
 
-
+  @Test // nameOfFunction_testCase_expectedResult()
+  public void isLeapYear_forMultiplesOfFourHundred_true() {
+    LeapYear leapYear = new LeapYear();
+    assertEquals(true, leapYear.isLeapYear(2000));
+  }
 
 }
